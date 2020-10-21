@@ -1,1 +1,20 @@
+#if we do not use print built-in function
 
+a = '''
+Bilgi
+ve 
+Algo 
+'''
+# our output will return the enters as \n
+# but we do not want that
+# so the resolution is using print function
+
+print('''
+Algo 
+&
+Bilg
+is 
+fun
+''' )
+
+# with the usage of ''' we have the opprtunity of multi-line string printing

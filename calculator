@@ -1,0 +1,26 @@
+# This code is a simple calculator 
+# for calculating four operations
+
+operation_quantity = int(input("How many times will you make operations: "))             # Here we define a limit for our loop
+operation_count = 0
+
+while operation_quantity >= operation_count:
+    first_number = float(input("Enter a number: "))
+    operation = input("Enter type of operation(+,-,*,/): ")
+    second_number = float(input("Enter a number: "))
+    
+    if operation == '+' or operation == '-' or operation == '/' or operation == '*':     # User may enter wrong character 
+        if operation == '+':
+            print('result is: ', first_number + second_number)
+        elif operation == '*':
+            print('result is: ', first_number * second_number)
+        elif operation == '/':
+            print('result is: ', first_number / second_number)
+        else:
+            print('result is: ', first_number - second_number)
+    else:
+        print("Don't you know four operations !!! :D")                                   # We can make fun off for this fault 
+    
+    operation_count += 1
+
+print("Thank you for prefering us !")
